@@ -1,0 +1,124 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.banner {
+    width: 100%;
+}
+
+
+/*Seção principal*/
+.principal {
+    margin: 3em auto;
+    background: #FEFEFE;
+    width: 940px;
+}
+
+.titulo-principal {
+    text-align: center;
+    font-size: 2em;
+    margin-bottom: 1em;
+    clear: left;
+}
+
+.principal p {
+    margin: 0 0 1em;
+}
+
+.principal strong {
+    font-weight: bold;
+}
+
+.principal em {
+    font-style: italic;
+}
+
+.utensilios {
+    width: 120px;
+    float: left;
+    margin: 0 20px 20px 0;
+}
+
+
+/*Seção Mapa*/
+.container-mapa {
+    padding: 3em 0;
+    background: linear-gradient(#FEFEFE, #888888);
+}
+
+.container-mapa p {
+    margin-bottom: 2em;
+    text-align: center;
+}
+
+.mapa {
+    width: 940px;
+    margin: 0 auto;
+}
+
+/*Seção benefício*/
+.beneficios {
+    padding: 3em 0;
+    background: #888888;
+}
+
+.container-beneficios {
+    width: 640px;
+    margin: 0 auto;
+}
+
+.lista-beneficios {
+    width: 40%;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.itens {
+    line-height: 1.5em;
+}
+
+.itens:before {
+    content: "✸";
+}
+
+.itens:first-child {
+    font-weight: bold;
+}
+
+.imagem-beneficios {
+    width: 60%;
+    opacity: 1;
+    transition: 400ms;
+    box-shadow: 10px 10px 5px  #000000;
+}
+
+.imagem-beneficios:hover {
+    opacity: 0.3;
+}
+
+
+/*Video*/
+.video-container{
+    width: 560px;
+    margin: 2em auto;
+    background: red;
+}
+
+/*Responsividade para dispositivos móveis*/
+@media screen and (max-width: 480px) {
+    .container, .principal, .container-beneficios, .mapa, .video-container{
+        width: auto;
+    }
+
+    .container h1 {
+        text-align: center;
+    }
+
+    nav {
+        position: static;
+    }
+
+    .lista-beneficios, .imagem-beneficios {
+        width: 100%;
+    }
+}
